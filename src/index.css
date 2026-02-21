@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+.markdown-body {
+  @apply text-gray-200;
+}
+
+.markdown-body p {
+  @apply mb-4 last:mb-0;
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+  @apply font-serif italic text-white mt-8 mb-4;
+}
+
+.markdown-body h1 { @apply text-3xl; }
+.markdown-body h2 { @apply text-2xl; }
+.markdown-body h3 { @apply text-xl; }
+
+.markdown-body em {
+  @apply italic text-indigo-300;
+}
+
+.markdown-body strong {
+  @apply font-semibold text-white;
+}
+
+.markdown-body blockquote {
+  @apply border-l-2 border-indigo-500/30 pl-4 italic text-gray-400 my-6;
+}

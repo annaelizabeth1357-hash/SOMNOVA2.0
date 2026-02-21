@@ -1,0 +1,5 @@
+{
+  "name": "SOMNOVA",
+  "description": "Complete your unfinished dreams using AI. Input text, voice, and images to weave the rest of your story.",
+  "requestFramePermissions": ["microphone"]
+}
